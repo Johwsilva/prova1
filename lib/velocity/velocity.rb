@@ -3,7 +3,8 @@ class Velocity
         @value = value
         @type = type
     end
-     def to_ms
+
+    def to_ms
         case @type
         when 'ms'
             @value
@@ -18,63 +19,63 @@ class Velocity
         end
     end
 
- def to_km
-    case @type
-    when 'ms'
-        @value * 3.6
-    when 'km'
-        @value
-    when 'mph'
-        @value / 0.621371
-    when 'ps'
-        @value / 0.911344
-    when 'n'
-        @value / 0.539957
+    def to_km
+        case @type
+        when 'ms'
+            @value * 3.6
+        when 'km'
+            @value
+        when 'mph'
+            @value / 0.621371
+        when 'ps'
+            @value / 0.911344
+        when 'n'
+            @value / 0.539957
+        end
     end
- end
 
- def to_mph
-    case @type
-    when 'ms'
-        @value * 2.23694
-    when 'km'
-        @value * 0.621371
-    when 'mph'
-        @value
-    when 'ps'
-        @value / 1.46667
-    when 'n'
-        @value / 0.868976
+    def to_mph
+        case @type
+        when 'ms'
+            @value * 2.23694
+        when 'km'
+            @value * 0.621371
+        when 'mph'
+            @value
+        when 'ps'
+            @value / 1.46667
+        when 'n'
+            @value / 0.868976
+        end
     end
- end
 
- def to_ps
-    case @type
-    when 'ms'
-        @value * 3.28084
-    when 'km'
-        @value * 0.911344
-    when 'mph'
-        @value * 1.46667
-    when 'ps'
-        @value
-    when 'n'
-        @value / 0.592484
-    end     
- end
-
- def to_n
-    case @type
-    when 'ms'
-        @value * 1.94384
-    when 'km'
-        @value * 0.539957
-    when 'mph'
-        @value * 0.868976
-    when 'ps'
-        @value * 0.592484
-    when 'n'
-        @value
+    def to_ps
+        case @type
+        when 'ms'
+            @value * 3.28084
+        when 'km'
+            @value * 0.911344
+        when 'mph'
+            @value * 1.46667
+        when 'ps'
+            @value
+        when 'n'
+            @value / 0.592484
+        end     
     end
- end
+
+    def to_n
+        case @type
+        when 'ms'
+            @value * 1.94384
+        when 'km'
+            @value * 0.539957
+        when 'mph'
+            @value * 0.868976
+        when 'ps'
+            @value * 0.592484
+        when 'n'
+            @value
+        end
+    end
 end 
