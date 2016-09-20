@@ -8,7 +8,7 @@ class Velocity
         when 'ms'
             @value
         when 'km'
-            @value / 3.6
+            format('%.2f',@value / 3.6).to_f
         when 'mph'
             @value / 2.23694
         when 'ps'
