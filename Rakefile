@@ -27,6 +27,6 @@ Rake::TestTask.new("test:all") do |t|
 end
 
 desc "Run the rubocop"
-  task :rubocop do
-    sh 'rubocop'
-  end
+task :rubocop do
+  sh 'rubocop'
+end

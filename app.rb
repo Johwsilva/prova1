@@ -5,7 +5,7 @@ require_relative 'lib/weigth/weigth'
 
 
 class App < Sinatra::Base
-		get '/:conversion_type/:origin_unit/:value/:destination_unit' do
+	get '/:conversion_type/:origin_unit/:value/:destination_unit' do
 		content_type :json
 
 		if params[:conversion_type] == 'velocity'
